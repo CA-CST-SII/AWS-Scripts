@@ -1,4 +1,5 @@
 #    !/bin/bash
+# test
 
 
 	aws cloudwatch get-metric-statistics --metric-name CPUUtilization --start-time 12-01-14T23:18:00 --end-time 12-06-14T23:18:00 --period 300 --namespace AWS/EC2 --statistics Maximum --dimensions Name=InstanceId,Value=i-1f3ef23a > AWS_Metrics/APP_Server_CPUUtilization.json
